@@ -12,6 +12,8 @@
 	<dict>
 		<key>4C3DC8C9631ECC8B414BDFDD502BA090C67D36EA</key>
 		<string>github.com:iflylabs/iflychat-ios-swift-chat-list-app.git</string>
+		<key>E0C3E0FECF75122A185BF33935AFEC19E252D8D1</key>
+		<string>github.com:iflylabs/iflychat-ios-sdk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iFlyChatGlobalListSwiftView.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>4C3DC8C9631ECC8B414BDFDD502BA090C67D36EA</key>
 		<string>../..</string>
+		<key>E0C3E0FECF75122A185BF33935AFEC19E252D8D1</key>
+		<string>../../../../GitHub%20Development%20Repository/iflychat-ios-sdk</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:iflylabs/iflychat-ios-swift-chat-list-app.git</string>
@@ -28,6 +32,14 @@
 	<string>4C3DC8C9631ECC8B414BDFDD502BA090C67D36EA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E0C3E0FECF75122A185BF33935AFEC19E252D8D1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iflychat-ios-sdk</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6E67430A1BA98A7500B03D5E /* ApplicationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6743091BA98A7500B03D5E /* ApplicationSettings.swift */; };
 		6E6743121BA9912300B03D5E /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6743111BA9912300B03D5E /* ApplicationData.swift */; };
-		6E6A5FAA1BA0503F00DB6E55 /* iFlyChatLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6A5FA91BA0503F00DB6E55 /* iFlyChatLibrary.framework */; };
 		6E6F7A281B708C5F00F8C099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A271B708C5F00F8C099 /* AppDelegate.swift */; };
 		6E6F7A2D1B708C5F00F8C099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A2B1B708C5F00F8C099 /* Main.storyboard */; };
 		6E6F7A2F1B708C5F00F8C099 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A2E1B708C5F00F8C099 /* Images.xcassets */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		6E6743091BA98A7500B03D5E /* ApplicationSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationSettings.swift; sourceTree = "<group>"; };
 		6E6743111BA9912300B03D5E /* ApplicationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
-		6E6A5FA91BA0503F00DB6E55 /* iFlyChatLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iFlyChatLibrary.framework; sourceTree = "<group>"; };
 		6E6F7A221B708C5F00F8C099 /* iFlyChatGlobalListSwiftView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlyChatGlobalListSwiftView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6F7A261B708C5F00F8C099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E6F7A271B708C5F00F8C099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E6A5FAA1BA0503F00DB6E55 /* iFlyChatLibrary.framework in Frameworks */,
 				6E6F7A4C1B708CBA00F8C099 /* libicucore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +75,6 @@
 		6E6F7A191B708C5F00F8C099 = {
 			isa = PBXGroup;
 			children = (
-				6E6A5FA91BA0503F00DB6E55 /* iFlyChatLibrary.framework */,
 				6E6F7A4F1B708DB600F8C099 /* Header.h */,
 				6E6F7A4B1B708CBA00F8C099 /* libicucore.dylib */,
 				6E6F7A241B708C5F00F8C099 /* iFlyChatGlobalListSwiftView */,
@@ -402,7 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iFlyChatGlobalListSwiftView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -416,7 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iFlyChatGlobalListSwiftView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
