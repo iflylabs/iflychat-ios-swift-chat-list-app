@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0it-Do-Bfz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="KU3-eA-Cui">
+            <objects>
+                <tabBarController title="Main" id="0it-Do-Bfz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="r1D-QC-awn"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ebW-4R-NAR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Jjn-If-Hqy" kind="relationship" relationship="viewControllers" id="6g4-PO-sKn"/>
+                        <segue destination="SF1-bH-1fQ" kind="relationship" relationship="viewControllers" id="Xgq-G2-oIF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEp-3S-Wao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2656" y="-131"/>
+        </scene>
+        <!--Users Table View Controller-->
+        <scene sceneID="eTX-DE-oNe">
+            <objects>
+                <tableViewController id="6Y4-b1-P2X" userLabel="Users Table View Controller" customClass="UsersTableViewController" customModule="iFlyChatGlobalListSwiftView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r34-hu-NKG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="aDB-2Z-v3m">
+                            <rect key="frame" x="0.0" y="7" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="6Y4-b1-P2X" id="Yji-wp-epw"/>
+                            </connections>
+                        </searchBar>
+                        <connections>
+                            <outlet property="dataSource" destination="6Y4-b1-P2X" id="h8Y-wq-uNk"/>
+                            <outlet property="delegate" destination="6Y4-b1-P2X" id="Ugl-yk-eJb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="SN2-Nq-Y0X"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Kuy-7v-w8Z" id="pXX-jD-G6e"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRR-S2-rqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Kuy-7v-w8Z">
+                    <connections>
+                        <outlet property="delegate" destination="6Y4-b1-P2X" id="iUl-at-bB2"/>
+                        <outlet property="searchBar" destination="aDB-2Z-v3m" id="NB7-ry-oKs"/>
+                        <outlet property="searchContentsController" destination="6Y4-b1-P2X" id="k4Q-BB-Nhj"/>
+                        <outlet property="searchResultsDataSource" destination="6Y4-b1-P2X" id="ad6-E3-hcK"/>
+                        <outlet property="searchResultsDelegate" destination="6Y4-b1-P2X" id="ZLB-gE-pSb"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-781" y="-625"/>
+        </scene>
+        <!--Rooms Table View Controller-->
+        <scene sceneID="Fwl-Ql-kPc">
+            <objects>
+                <tableViewController id="NlD-jq-WAK" userLabel="Rooms Table View Controller" customClass="RoomsTableViewController" customModule="iFlyChatGlobalListSwiftView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="B0K-32-cdK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="D4G-x1-INj">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="NlD-jq-WAK" id="wCu-Hw-EcI"/>
+                            </connections>
+                        </searchBar>
+                        <connections>
+                            <outlet property="dataSource" destination="NlD-jq-WAK" id="4xL-MS-CeU"/>
+                            <outlet property="delegate" destination="NlD-jq-WAK" id="lPw-ff-DeV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="xRD-uT-22U"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="HxN-Jh-r4E" id="S3c-29-p8O"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PG8-Kr-uHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="HxN-Jh-r4E">
+                    <connections>
+                        <outlet property="delegate" destination="NlD-jq-WAK" id="4Be-d8-RjE"/>
+                        <outlet property="searchBar" destination="D4G-x1-INj" id="64r-iG-hh1"/>
+                        <outlet property="searchContentsController" destination="NlD-jq-WAK" id="q6f-nE-N2e"/>
+                        <outlet property="searchResultsDataSource" destination="NlD-jq-WAK" id="tgN-6z-T2p"/>
+                        <outlet property="searchResultsDelegate" destination="NlD-jq-WAK" id="D3l-xu-L42"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-781" y="357"/>
+        </scene>
+        <!--Users-->
+        <scene sceneID="Puy-kS-3w4">
+            <objects>
+                <navigationController title="Users" automaticallyAdjustsScrollViewInsets="NO" id="Jjn-If-Hqy" userLabel="Users" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="User" image="user" id="ePp-Mv-wL0" userLabel="Users"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MXX-jj-rQS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Y4-b1-P2X" kind="relationship" relationship="rootViewController" id="s2Z-Tp-TdO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhg-pT-IDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1481" y="-625"/>
+        </scene>
+        <!--Rooms-->
+        <scene sceneID="blf-7x-wgL">
+            <objects>
+                <navigationController title="Rooms" automaticallyAdjustsScrollViewInsets="NO" id="SF1-bH-1fQ" userLabel="Rooms" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rooms" image="group" id="vE4-Ax-OsK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xq6-Rx-8XE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NlD-jq-WAK" kind="relationship" relationship="rootViewController" id="uyU-JJ-MKu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ps-8i-35s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1481" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="group" width="25" height="25"/>
+        <image name="user" width="25" height="25"/>
+    </resources>
+</document>

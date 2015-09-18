@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E67430A1BA98A7500B03D5E /* ApplicationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6743091BA98A7500B03D5E /* ApplicationSettings.swift */; };
+		6E6743121BA9912300B03D5E /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6743111BA9912300B03D5E /* ApplicationData.swift */; };
+		6E6A5FAA1BA0503F00DB6E55 /* iFlyChatLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6A5FA91BA0503F00DB6E55 /* iFlyChatLibrary.framework */; };
+		6E6F7A281B708C5F00F8C099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A271B708C5F00F8C099 /* AppDelegate.swift */; };
+		6E6F7A2D1B708C5F00F8C099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A2B1B708C5F00F8C099 /* Main.storyboard */; };
+		6E6F7A2F1B708C5F00F8C099 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A2E1B708C5F00F8C099 /* Images.xcassets */; };
+		6E6F7A321B708C5F00F8C099 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A301B708C5F00F8C099 /* LaunchScreen.xib */; };
+		6E6F7A3E1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A3D1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.swift */; };
+		6E6F7A4C1B708CBA00F8C099 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6F7A4B1B708CBA00F8C099 /* libicucore.dylib */; };
+		6E6F7A5B1B708F0A00F8C099 /* GlobalListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A541B708F0A00F8C099 /* GlobalListTableViewCell.xib */; };
+		6E6F7A651B708FAA00F8C099 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A641B708FAA00F8C099 /* DataClass.swift */; };
+		6E6F7A671B708FC500F8C099 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A661B708FC500F8C099 /* UsersTableViewController.swift */; };
+		6E6F7A6C1B70901100F8C099 /* GlobalListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A6B1B70901100F8C099 /* GlobalListTableViewCell.swift */; };
+		6E6F7A6E1B70D41A00F8C099 /* RoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A6D1B70D41A00F8C099 /* RoomsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E6F7A381B708C5F00F8C099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E6F7A1A1B708C5F00F8C099 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E6F7A211B708C5F00F8C099;
+			remoteInfo = iFlyChatGlobalListSwiftView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E6743091BA98A7500B03D5E /* ApplicationSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationSettings.swift; sourceTree = "<group>"; };
+		6E6743111BA9912300B03D5E /* ApplicationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
+		6E6A5FA91BA0503F00DB6E55 /* iFlyChatLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iFlyChatLibrary.framework; sourceTree = "<group>"; };
+		6E6F7A221B708C5F00F8C099 /* iFlyChatGlobalListSwiftView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlyChatGlobalListSwiftView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6F7A261B708C5F00F8C099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E6F7A271B708C5F00F8C099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E6F7A2C1B708C5F00F8C099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E6F7A2E1B708C5F00F8C099 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E6F7A311B708C5F00F8C099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6E6F7A371B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFlyChatGlobalListSwiftViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6F7A3C1B708C5F00F8C099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E6F7A3D1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFlyChatGlobalListSwiftViewTests.swift; sourceTree = "<group>"; };
+		6E6F7A4B1B708CBA00F8C099 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		6E6F7A4F1B708DB600F8C099 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		6E6F7A541B708F0A00F8C099 /* GlobalListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlobalListTableViewCell.xib; sourceTree = "<group>"; };
+		6E6F7A641B708FAA00F8C099 /* DataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
+		6E6F7A661B708FC500F8C099 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		6E6F7A6B1B70901100F8C099 /* GlobalListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalListTableViewCell.swift; sourceTree = "<group>"; };
+		6E6F7A6D1B70D41A00F8C099 /* RoomsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E6F7A1F1B708C5F00F8C099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6A5FAA1BA0503F00DB6E55 /* iFlyChatLibrary.framework in Frameworks */,
+				6E6F7A4C1B708CBA00F8C099 /* libicucore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6F7A341B708C5F00F8C099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E6F7A191B708C5F00F8C099 = {
+			isa = PBXGroup;
+			children = (
+				6E6A5FA91BA0503F00DB6E55 /* iFlyChatLibrary.framework */,
+				6E6F7A4F1B708DB600F8C099 /* Header.h */,
+				6E6F7A4B1B708CBA00F8C099 /* libicucore.dylib */,
+				6E6F7A241B708C5F00F8C099 /* iFlyChatGlobalListSwiftView */,
+				6E6F7A3A1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests */,
+				6E6F7A231B708C5F00F8C099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E6F7A231B708C5F00F8C099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E6F7A221B708C5F00F8C099 /* iFlyChatGlobalListSwiftView.app */,
+				6E6F7A371B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E6F7A241B708C5F00F8C099 /* iFlyChatGlobalListSwiftView */ = {
+			isa = PBXGroup;
+			children = (
+				6E6F7A271B708C5F00F8C099 /* AppDelegate.swift */,
+				6E6743111BA9912300B03D5E /* ApplicationData.swift */,
+				6E6743091BA98A7500B03D5E /* ApplicationSettings.swift */,
+				6E6F7A5E1B708F1400F8C099 /* DataClass */,
+				6E6F7A611B708F5400F8C099 /* GlobalListTableViewCell */,
+				6E6F7A601B708F4B00F8C099 /* Main Screen */,
+				6E6F7A2E1B708C5F00F8C099 /* Images.xcassets */,
+				6E6F7A2B1B708C5F00F8C099 /* Main.storyboard */,
+				6E6F7A301B708C5F00F8C099 /* LaunchScreen.xib */,
+				6E6F7A251B708C5F00F8C099 /* Supporting Files */,
+			);
+			path = iFlyChatGlobalListSwiftView;
+			sourceTree = "<group>";
+		};
+		6E6F7A251B708C5F00F8C099 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E6F7A261B708C5F00F8C099 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E6F7A3A1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E6F7A3D1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.swift */,
+				6E6F7A3B1B708C5F00F8C099 /* Supporting Files */,
+			);
+			path = iFlyChatGlobalListSwiftViewTests;
+			sourceTree = "<group>";
+		};
+		6E6F7A3B1B708C5F00F8C099 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E6F7A3C1B708C5F00F8C099 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E6F7A5E1B708F1400F8C099 /* DataClass */ = {
+			isa = PBXGroup;
+			children = (
+				6E6F7A641B708FAA00F8C099 /* DataClass.swift */,
+			);
+			name = DataClass;
+			sourceTree = "<group>";
+		};
+		6E6F7A601B708F4B00F8C099 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6E6F7A661B708FC500F8C099 /* UsersTableViewController.swift */,
+				6E6F7A6D1B70D41A00F8C099 /* RoomsTableViewController.swift */,
+			);
+			name = "Main Screen";
+			sourceTree = "<group>";
+		};
+		6E6F7A611B708F5400F8C099 /* GlobalListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E6F7A6B1B70901100F8C099 /* GlobalListTableViewCell.swift */,
+				6E6F7A541B708F0A00F8C099 /* GlobalListTableViewCell.xib */,
+			);
+			name = GlobalListTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E6F7A211B708C5F00F8C099 /* iFlyChatGlobalListSwiftView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E6F7A411B708C5F00F8C099 /* Build configuration list for PBXNativeTarget "iFlyChatGlobalListSwiftView" */;
+			buildPhases = (
+				6E6F7A1E1B708C5F00F8C099 /* Sources */,
+				6E6F7A1F1B708C5F00F8C099 /* Frameworks */,
+				6E6F7A201B708C5F00F8C099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iFlyChatGlobalListSwiftView;
+			productName = iFlyChatGlobalListSwiftView;
+			productReference = 6E6F7A221B708C5F00F8C099 /* iFlyChatGlobalListSwiftView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E6F7A361B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E6F7A441B708C5F00F8C099 /* Build configuration list for PBXNativeTarget "iFlyChatGlobalListSwiftViewTests" */;
+			buildPhases = (
+				6E6F7A331B708C5F00F8C099 /* Sources */,
+				6E6F7A341B708C5F00F8C099 /* Frameworks */,
+				6E6F7A351B708C5F00F8C099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E6F7A391B708C5F00F8C099 /* PBXTargetDependency */,
+			);
+			name = iFlyChatGlobalListSwiftViewTests;
+			productName = iFlyChatGlobalListSwiftViewTests;
+			productReference = 6E6F7A371B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E6F7A1A1B708C5F00F8C099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Prateek Grover";
+				TargetAttributes = {
+					6E6F7A211B708C5F00F8C099 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = ET385UDM96;
+					};
+					6E6F7A361B708C5F00F8C099 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6E6F7A211B708C5F00F8C099;
+					};
+				};
+			};
+			buildConfigurationList = 6E6F7A1D1B708C5F00F8C099 /* Build configuration list for PBXProject "iFlyChatGlobalListSwiftView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E6F7A191B708C5F00F8C099;
+			productRefGroup = 6E6F7A231B708C5F00F8C099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E6F7A211B708C5F00F8C099 /* iFlyChatGlobalListSwiftView */,
+				6E6F7A361B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E6F7A201B708C5F00F8C099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6F7A5B1B708F0A00F8C099 /* GlobalListTableViewCell.xib in Resources */,
+				6E6F7A2D1B708C5F00F8C099 /* Main.storyboard in Resources */,
+				6E6F7A321B708C5F00F8C099 /* LaunchScreen.xib in Resources */,
+				6E6F7A2F1B708C5F00F8C099 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6F7A351B708C5F00F8C099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E6F7A1E1B708C5F00F8C099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6F7A6E1B70D41A00F8C099 /* RoomsTableViewController.swift in Sources */,
+				6E6F7A651B708FAA00F8C099 /* DataClass.swift in Sources */,
+				6E6F7A6C1B70901100F8C099 /* GlobalListTableViewCell.swift in Sources */,
+				6E6743121BA9912300B03D5E /* ApplicationData.swift in Sources */,
+				6E6F7A671B708FC500F8C099 /* UsersTableViewController.swift in Sources */,
+				6E6F7A281B708C5F00F8C099 /* AppDelegate.swift in Sources */,
+				6E67430A1BA98A7500B03D5E /* ApplicationSettings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6F7A331B708C5F00F8C099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6F7A3E1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E6F7A391B708C5F00F8C099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E6F7A211B708C5F00F8C099 /* iFlyChatGlobalListSwiftView */;
+			targetProxy = 6E6F7A381B708C5F00F8C099 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E6F7A2B1B708C5F00F8C099 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6F7A2C1B708C5F00F8C099 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E6F7A301B708C5F00F8C099 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6F7A311B708C5F00F8C099 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E6F7A3F1B708C5F00F8C099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E6F7A401B708C5F00F8C099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E6F7A421B708C5F00F8C099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				INFOPLIST_FILE = iFlyChatGlobalListSwiftView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
+			};
+			name = Debug;
+		};
+		6E6F7A431B708C5F00F8C099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				INFOPLIST_FILE = iFlyChatGlobalListSwiftView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
+			};
+			name = Release;
+		};
+		6E6F7A451B708C5F00F8C099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iFlyChatGlobalListSwiftViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFlyChatGlobalListSwiftView.app/iFlyChatGlobalListSwiftView";
+			};
+			name = Debug;
+		};
+		6E6F7A461B708C5F00F8C099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iFlyChatGlobalListSwiftViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFlyChatGlobalListSwiftView.app/iFlyChatGlobalListSwiftView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E6F7A1D1B708C5F00F8C099 /* Build configuration list for PBXProject "iFlyChatGlobalListSwiftView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6F7A3F1B708C5F00F8C099 /* Debug */,
+				6E6F7A401B708C5F00F8C099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E6F7A411B708C5F00F8C099 /* Build configuration list for PBXNativeTarget "iFlyChatGlobalListSwiftView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6F7A421B708C5F00F8C099 /* Debug */,
+				6E6F7A431B708C5F00F8C099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E6F7A441B708C5F00F8C099 /* Build configuration list for PBXNativeTarget "iFlyChatGlobalListSwiftViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6F7A451B708C5F00F8C099 /* Debug */,
+				6E6F7A461B708C5F00F8C099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E6F7A1A1B708C5F00F8C099 /* Project object */;
+}
