@@ -14,12 +14,12 @@
 		6E6F7A2F1B708C5F00F8C099 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A2E1B708C5F00F8C099 /* Images.xcassets */; };
 		6E6F7A321B708C5F00F8C099 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A301B708C5F00F8C099 /* LaunchScreen.xib */; };
 		6E6F7A3E1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A3D1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.swift */; };
-		6E6F7A4C1B708CBA00F8C099 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6F7A4B1B708CBA00F8C099 /* libicucore.dylib */; };
 		6E6F7A5B1B708F0A00F8C099 /* GlobalListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6F7A541B708F0A00F8C099 /* GlobalListTableViewCell.xib */; };
 		6E6F7A651B708FAA00F8C099 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A641B708FAA00F8C099 /* DataClass.swift */; };
 		6E6F7A671B708FC500F8C099 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A661B708FC500F8C099 /* UsersTableViewController.swift */; };
 		6E6F7A6C1B70901100F8C099 /* GlobalListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A6B1B70901100F8C099 /* GlobalListTableViewCell.swift */; };
 		6E6F7A6E1B70D41A00F8C099 /* RoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F7A6D1B70D41A00F8C099 /* RoomsTableViewController.swift */; };
+		6EA92D851BB12E95001A6B56 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA92D841BB12E95001A6B56 /* libicucore.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +44,13 @@
 		6E6F7A371B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFlyChatGlobalListSwiftViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6F7A3C1B708C5F00F8C099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E6F7A3D1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFlyChatGlobalListSwiftViewTests.swift; sourceTree = "<group>"; };
-		6E6F7A4B1B708CBA00F8C099 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		6E6F7A4F1B708DB600F8C099 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		6E6F7A541B708F0A00F8C099 /* GlobalListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlobalListTableViewCell.xib; sourceTree = "<group>"; };
 		6E6F7A641B708FAA00F8C099 /* DataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		6E6F7A661B708FC500F8C099 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		6E6F7A6B1B70901100F8C099 /* GlobalListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalListTableViewCell.swift; sourceTree = "<group>"; };
 		6E6F7A6D1B70D41A00F8C099 /* RoomsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsTableViewController.swift; sourceTree = "<group>"; };
+		6EA92D841BB12E95001A6B56 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E6F7A4C1B708CBA00F8C099 /* libicucore.dylib in Frameworks */,
+				6EA92D851BB12E95001A6B56 /* libicucore.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +75,8 @@
 		6E6F7A191B708C5F00F8C099 = {
 			isa = PBXGroup;
 			children = (
+				6EA92D841BB12E95001A6B56 /* libicucore.tbd */,
 				6E6F7A4F1B708DB600F8C099 /* Header.h */,
-				6E6F7A4B1B708CBA00F8C099 /* libicucore.dylib */,
 				6E6F7A241B708C5F00F8C099 /* iFlyChatGlobalListSwiftView */,
 				6E6F7A3A1B708C5F00F8C099 /* iFlyChatGlobalListSwiftViewTests */,
 				6E6F7A231B708C5F00F8C099 /* Products */,
@@ -204,7 +204,9 @@
 		6E6F7A1A1B708C5F00F8C099 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Prateek Grover";
 				TargetAttributes = {
 					6E6F7A211B708C5F00F8C099 = {
@@ -331,6 +333,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -398,10 +401,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = iFlyChatGlobalListSwiftView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iFlyLabs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 			};
@@ -412,10 +417,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = iFlyChatGlobalListSwiftView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iFlyLabs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 			};
@@ -425,16 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = iFlyChatGlobalListSwiftViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iFlyLabs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFlyChatGlobalListSwiftView.app/iFlyChatGlobalListSwiftView";
 			};
@@ -444,12 +449,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iFlyChatGlobalListSwiftViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iFlyLabs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFlyChatGlobalListSwiftView.app/iFlyChatGlobalListSwiftView";
 			};

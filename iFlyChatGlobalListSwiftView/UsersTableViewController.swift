@@ -9,7 +9,7 @@
 import UIKit
 
 
-class UsersTableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate
+class UsersTableViewController: UITableViewController, UISearchBarDelegate, UISearchDisplayDelegate
  {
     var resultsArray: NSArray!
     var userArray: iFlyChatOrderedDictionary!
@@ -39,7 +39,7 @@ class UsersTableViewController: UITableViewController, UITableViewDelegate, UITa
         self.tableView.tableHeaderView = self.searchDisplayController!.searchBar;
         
         //Registering custom UITableViewCell for table view and search results table view
-        var nib: UINib = UINib(nibName: "GlobalListTableViewCell", bundle:nil)
+        let nib: UINib = UINib(nibName: "GlobalListTableViewCell", bundle:nil)
         
         self.tableView.registerNib(nib, forCellReuseIdentifier: "GlobalListCell")
         
@@ -67,7 +67,7 @@ class UsersTableViewController: UITableViewController, UITableViewDelegate, UITa
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "refreshUserList",
-            name: "onUpdatedUserList",
+            name: "onUpdatedGlobalList",
             object: nil)
     }
     
@@ -76,7 +76,7 @@ class UsersTableViewController: UITableViewController, UITableViewDelegate, UITa
         //Removing the observer
         NSNotificationCenter.defaultCenter().removeObserver(
             self,
-            name: "onUpdatedUserList",
+            name: "onUpdatedGlobalList",
             object: nil
         )
     }
@@ -119,7 +119,7 @@ class UsersTableViewController: UITableViewController, UITableViewDelegate, UITa
         tableView.separatorInset.top = 0
         
                 
-        var cell = tableView.dequeueReusableCellWithIdentifier("GlobalListCell") as? GlobalListTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("GlobalListCell") as? GlobalListTableViewCell
         
         var currentUser: iFlyChatUser
 
@@ -165,11 +165,11 @@ class UsersTableViewController: UITableViewController, UITableViewDelegate, UITa
     
     func loadImagesWithURL(imageURL:NSString,indexPath:NSIndexPath, activeTableView:UITableView, userId:NSString)
     {
-        var url:NSURL = NSURL(string: imageURL as String)!
+        let url:NSURL = NSURL(string: imageURL as String)!
         
-        var data:NSData = NSData(contentsOfURL: url)!
+        let data:NSData = NSData(contentsOfURL: url)!
         
-        var img:UIImage = UIImage(data: data)!
+        let img:UIImage = UIImage(data: data)!
         
         //Inserting downloaded image in cache
         userImageCache.setObject(img, forKey: userId)
@@ -197,15 +197,15 @@ class UsersTableViewController: UITableViewController, UITableViewDelegate, UITa
         resultsArray = NSArray()
         
         //Creating a predicate to be used for search
-        var resultPredicate:NSPredicate = NSPredicate(format: "SELF.getName contains[c] %@", searchText)
+        let resultPredicate:NSPredicate = NSPredicate(format: "SELF.getName contains[c] %@", searchText)
         
         resultsArray = userArray.filteredArrayUsingPredicate(resultPredicate)
     }
 
     
-    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String!) -> Bool
+    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool
     {
-        self.filterContentForSearchText(searchString)
+        self.filterContentForSearchText(searchString!)
         
         return true;
     }

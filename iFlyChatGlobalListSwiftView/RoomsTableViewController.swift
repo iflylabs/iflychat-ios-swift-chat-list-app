@@ -9,7 +9,7 @@
 import UIKit
 
 
-class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate
+class RoomsTableViewController: UITableViewController, UISearchBarDelegate, UISearchDisplayDelegate
 {
     var resultsArray: NSArray!
     var roomArray: iFlyChatOrderedDictionary!
@@ -36,7 +36,7 @@ class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITa
         self.tableView.tableHeaderView = self.searchDisplayController!.searchBar;
         
         
-        var nib: UINib = UINib(nibName: "GlobalListTableViewCell", bundle:nil)
+        let nib: UINib = UINib(nibName: "GlobalListTableViewCell", bundle:nil)
         
         self.tableView.registerNib(nib, forCellReuseIdentifier: "GlobalListCell")
         
@@ -61,7 +61,7 @@ class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITa
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "refreshRoomList",
-            name: "iFlyChat.updatedRoomList",
+            name: "onUpdatedGlobalList",
             object: nil)
     }
     
@@ -69,7 +69,7 @@ class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITa
     {
         NSNotificationCenter.defaultCenter().removeObserver(
             self,
-            name: "onUpdatedRoomList",
+            name: "onUpdatedGlobalList",
             object: nil
         )
     }
@@ -112,7 +112,7 @@ class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITa
         tableView.separatorInset.top = 0
         
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("GlobalListCell") as? GlobalListTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("GlobalListCell") as? GlobalListTableViewCell
 
         var currentRoom: iFlyChatRoom
         
@@ -152,11 +152,11 @@ class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITa
     
     func loadImagesWithURL(imageURL:NSString,indexPath:NSIndexPath, activeTableView:UITableView, roomId:NSString)
     {
-        var url:NSURL = NSURL(string: imageURL as String)!
+        let url:NSURL = NSURL(string: imageURL as String)!
         
-        var data:NSData = NSData(contentsOfURL: url)!
+        let data:NSData = NSData(contentsOfURL: url)!
         
-        var img:UIImage = UIImage(data: data)!
+        let img:UIImage = UIImage(data: data)!
         
         roomImageCache.setObject(img, forKey: roomId)
         
@@ -181,15 +181,15 @@ class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITa
     {
         resultsArray = NSArray()
         
-        var resultPredicate:NSPredicate = NSPredicate(format: "SELF.getName contains[c] %@", searchText)
+        let resultPredicate:NSPredicate = NSPredicate(format: "SELF.getName contains[c] %@", searchText)
         
         resultsArray = roomArray.filteredArrayUsingPredicate(resultPredicate)
     }
     
     
-    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String!) -> Bool
+    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool
     {
-        self.filterContentForSearchText(searchString)
+        self.filterContentForSearchText(searchString!)
         
         return true;
     }
