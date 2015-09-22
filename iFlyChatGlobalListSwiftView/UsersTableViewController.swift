@@ -67,7 +67,7 @@ class UsersTableViewController: UITableViewController, UITableViewDelegate, UITa
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "refreshUserList",
-            name: "onUpdatedUserList",
+            name: "onUpdatedGlobalList",
             object: nil)
     }
     
@@ -76,7 +76,7 @@ class UsersTableViewController: UITableViewController, UITableViewDelegate, UITa
         //Removing the observer
         NSNotificationCenter.defaultCenter().removeObserver(
             self,
-            name: "onUpdatedUserList",
+            name: "onUpdatedGlobalList",
             object: nil
         )
     }

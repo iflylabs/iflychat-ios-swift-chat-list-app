@@ -61,7 +61,7 @@ class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITa
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "refreshRoomList",
-            name: "iFlyChat.updatedRoomList",
+            name: "onUpdatedGlobalList",
             object: nil)
     }
     
@@ -69,7 +69,7 @@ class RoomsTableViewController: UITableViewController, UITableViewDelegate, UITa
     {
         NSNotificationCenter.defaultCenter().removeObserver(
             self,
-            name: "onUpdatedRoomList",
+            name: "onUpdatedGlobalList",
             object: nil
         )
     }
